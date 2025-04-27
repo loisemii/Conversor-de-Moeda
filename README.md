@@ -13,68 +13,40 @@
 
 ## História
 
-Nesta oportunidade foi solicitado para nós Devs a criação de um conversor de moeda utilizando a linguagem Java. As
-características solicitadas por nosso cliente são as seguintes:
+História
+Curso: Java e Orientação a Objetos
+Turma: G8 - ONE
+Módulo: Praticando Java: Challenge Conversor de Moedas
 
-O conversor de moeda deverá:
+Conversor de Moedas é um projeto cujo seu objetivo central é automatizar o processo de conversão entre diferentes moedas, garantindo que os participantes possam realizar trocas de valores de forma precisa e eficiente Neste desafio, foi solicitado aos desenvolvedores a criação de um conversor de moedas utilizando a linguagem Java. O objetivo principal do. As funcionalidades exigidas pelo cliente são as seguintes:
+O conversor de moedas deverá:
+•	Converter de Reais para Dólar
+•	Converter de Reais para Euro
+•	Converter de Reais para Libras Esterlinas
+•	Converter de Reais para Peso Argentino
+•	Converter de Reais para Peso Chileno
+Além disso, o sistema também deve permitir a conversão inversa entre as moedas.
 
-- Converter de Reais a Dólar
-- Converter de Reais a Euro
-- Converter de Reais a Libras Esterlinas
-- Converter de Reais a Peso Argentino
-- Converter de Reais a Peso Chileno
+Conversão
+As unidades de conversão são estruturadas em classes, com cada classe contendo suas unidades como atributos estáticos, que representam instâncias da própria classe. Cada unidade possui um símbolo, um fator multiplicador (usado no método de conversão entre as unidades) e um nome. 
 
-Lembrando que deve ser possível também converter de forma inversa.
+Interface Gráfica (GUI)
+Para a criação da interface gráfica, foi utilizado o kit de componentes Swing do Java. Esse kit permite a construção de componentes visuais com base no paradigma orientado a objetos, oferecendo uma solução prática e eficaz para a construção de interfaces gráficas.
+•	Facilidade de Expansão e Adição de Novas Unidades de Conversão:
+Para adicionar novas unidades ao sistema, basta criar uma subclasse da classe Unit.
+•	Como Adicionar uma Nova Tela de Conversão:
+Para incluir uma nova tela de conversão, siga os seguintes passos:
+1.	Crie uma classe que estenda a classe abstrata Screen.
+2.	Implemente e concretize os métodos abstratos definidos na classe Screen.
+3.	Adicione essa nova tela ao menu de navegação (NavBar) da aplicação.
+•	Criação de Outras Telas:
+Para criar outras telas, basta criar uma classe que estenda JPanel e implemente a interface Screen_Properties, adicionando-a à NavBar conforme necessário.
 
+Tecnologias Utilizadas
+•	Linguagem: Java 8
+•	IDE: IntelliJ IDEA
+•	Interface (GUI): Swing
+•	Testes: JUnit
+•	Currency API: AwesomeAPI
 
-<br>
-
-
-
-### Conversão
-
-- As unidades de conversão são divididas em Classes, cada classe possui suas unidades em forma de atributo estático (que
-  seria uma instância da Classe). Cada unidade possui um **símbolo**, um **fator multiplicador** (que é usado no método
-  para fazer a conversão entre as unidades) e o seu **nome**.
-- Uma unidade pode ser **convertida para outra** chamando seu próprio método convert, assim:
-
-```java
-BigDecimal result = REAL.convert(new BigDecimal("1"), DOLAR);
-```
-
-! O fator multiplicador das moedas é o valor equivalente de 1 em relação ao Dolar, para facilitar a conversão entre
-elas.
-
-### GUI
-
-- [x] Conforme sugerido para este Challenge, foi utilizado o kit de componentes GUI do próprio Java, chamado **Swing**,
-  onde podemos criar componentes e interfaces gráficas com o paradígma orientado a objetos.
-
-- [x] Fácil expansão e adição de novas unidades de conversão
-- Para adicionar novas unidades, basta criar uma subclasse
-  Unit</a>.
-
-- Para adicionar a tela referente a essa nova unidade de conversão basta:
-
-  1- Criar uma classe que estenda a classe
-  abstrata 
-
-  2- Implementar e concretizar os métodos abstratos.
-
-  3- Adicionar essa nova tela ao objeto na NavBar,
-  conforme
-
-- Para criar qualquer outra tela, basta criar um classe que estenda de JPanel e implemente a
-  interface 
-<br>
-
-## Tecnologias utilizadas
-
-- Linguagem: Java 8
-- IDE: 
-- Inteface (GUI): 
-- Testes: 
-- Currency API
-
-<br><br>
-# Conversor-de-Moeda
+Link do repositório no GitHub Para questões técnicas, envie um email para: loisee.dev@gmail.com Para discussões sobre o projeto, utilize a seção de Issues no GitHub. Autores do projeto Seu Nome - Emilli Loise Moraes Campos
